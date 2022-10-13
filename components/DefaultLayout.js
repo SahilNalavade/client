@@ -1,14 +1,15 @@
 import React from 'react'
+import styles from '../styles/Authentication.module.css'
 
-function DefaultLayout() {
+function DefaultLayout(props) {
   return (
-    <div className='layout'>
+    <div className={styles.layout}>
 
-        <div className='header'>
+        <div className={styles.header}>
             <h1>CV</h1>
         </div>
 
-        <div className='content'>
+        <div className={styles.content}>
             {props.children}
         </div>
     </div>
